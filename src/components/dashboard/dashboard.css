@@ -1,0 +1,116 @@
+.painel {
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cabecalho-painel {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cabecalho-painel h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .botao-sair {
+    display: flex;
+    background-color: white;
+    border: 2px solid #80808038;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.3s;
+
+
+    img{
+        margin-right: 6px;
+    }
+  }
+  
+  .botao-sair:hover {
+    background-color: #d0d0d04c;
+  }
+  
+  .conteudo-painel {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .cartoes-painel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .cartao-painel {
+    position: relative; /* Adiciona posição relativa para as imagens */
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .cartao-painel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cartao-painel h2 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    text-align: start;
+  }
+  
+  .valor-cartao {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .imagem-cartao {
+    position: absolute;
+    top: 0;
+    right: 13px;
+    width: 21px;
+    height: 40px;
+  }
+  
+  .acoes-painel {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .botao-acao {
+    background-color: #433535;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        margin-right: 5px
+    }
+  }
+  
+  .botao-acao:hover {
+    background-color: #5c4747;
+  }
+  

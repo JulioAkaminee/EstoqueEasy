@@ -1,0 +1,51 @@
+.container-form-autenticacao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.grupo-formulario{
+    display: flex;
+  flex-direction: column;
+
+}
+.form-autenticacao{
+  
+  padding: 60px 100px;
+  border-radius: 10px;
+  width: 300px;
+
+}
+.grupo-formulario>label{
+    text-align: start;  
+    margin:  2px 0;
+}
+
+
+  
+.input-login{
+    padding: 10px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+
+}
+.botao-autenticacao {
+  background-color: white;
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+}
+  
+
+  
