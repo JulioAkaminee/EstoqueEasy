@@ -1,53 +1,27 @@
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../login/login.css';
 
-const Login = ({ onSubmit }) => {
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(email, senha);
-  };
-
+const Login = () => {
   return (
     <div className="container-form-autenticacao">
-      <form className="form-autenticacao" onSubmit={handleSubmit}>
+      <form className="form-autenticacao" method='POST' action='/api/submit-form'>
         <h2>Faça Seu Login</h2>
         <div className="grupo-formulario">
-          <label htmlFor="email">E-mail</label><br />
-          <input
-            type="email"
-            className="input-login"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            placeholder='Digite seu Email'
-          />
-
-
-
-
-
-
-
+          <label htmlFor="email">E-mail</label>
+          <input type="email" className="input-login" required placeholder='Digite seu Email'/>
         </div>
+
         <div className="grupo-formulario">
-          <label htmlFor="senha">Senha</label><br />
-          <input
-            type="password"
-            className="input-login"
-            value={senha}
-            onChange={(e) => setSenha(e.target.value)}
-            required
-            placeholder='Digite Sua Senha'
-          />
+          <label htmlFor="senha">Senha</label>
+          <input type="password" className="input-login" required placeholder='Digite Sua Senha'/>
         </div>
+
         <button type="submit" className="botao-autenticacao">Entrar</button>
+
         <div className="links-autenticacao">
-          {/* <Link to="/recuperar-senha">Esqueceu a senha?</Link>
-          <Link to="/cadastro">Criar uma conta</Link> */}
+          <Link to="/recuperar-senha">Esqueceu a senha?</Link>
+          <p>Não tem uma conta?  <Link to="/cadastro">Criar uma conta</Link></p>
         </div>
       </form>
     </div>

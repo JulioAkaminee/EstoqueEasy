@@ -1,17 +1,12 @@
 import './App.css';
-import Login from './components/login/login'; 
-import Cadastro from './components/cadastro/cadastro';
-import Dashboard from './components/dashboard/dashboard';
-import RecuperarSenha from './components/recuperarsenha/recuperarsenha';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Router from '../src/routers/router.jsx'
 function App() {
   return (
-    <div className="App">
-      <Login/>
-      {/* <Cadastro/> */}
-      {/* <Dashboard/> */}
-      {/* <RecuperarSenha/> */}
-      
-    </div>
+   <BrowserRouter>
+   <Router/>
+   </BrowserRouter>
   );
 }
 
